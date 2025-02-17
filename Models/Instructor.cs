@@ -23,7 +23,7 @@ namespace EF02.Models
         [ForeignKey("Department")]
         public int Dept_ID { get; set; }
 
-        public Department Department { get; set; }
+        public Department Department { get; set; ]
 
         public ICollection<Department> Departments { get; set; }=new HashSet<Department>();
         public ICollection<Course_Inst>courses { get; set; } =new HashSet<Course_Inst>();
